@@ -18,6 +18,7 @@
         }
         .botoes-div {
             margin-top: 10px;
+            align-content: center;
             display: flex;
             flex-direction: row;
             justify-content: space-around;
@@ -40,32 +41,34 @@
 
 <body>
 
-    <a href="index.html">
+    <a href="segunda_tela.html">
         <button type="button" class="btn btn-secondary">
             Voltar
         </button>
     </a>
-    <div class="botoes-div">
-        <div>
-            <main id="original">
-            </main>
-            <div class="botoes-div">
-                <button type="button" class="btn btn-secondary" onclick="misturar()">
-                    Shuffle
-                </button>
-                <button type="button" class="btn btn-secondary" onclick="exportOriginal()">
-                    Exportar Original
-                </button>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <main id="original">
+                </main>
+                <div class="botoes-div">
+                        <button type="button" class="btn btn-secondary" onclick="misturar()">
+                            Shuffle
+                        </button>
+                        <button type="button" class="btn btn-secondary" onclick="exportOriginal()">
+                            Exportar Original
+                        </button>
+                </div>
             </div>
-        </div>
-        <div>
-            <main id="caleidoscopio">
-            </main>
-            <div class="botoes-div">
-                <button type="button" class="btn btn-secondary" onclick="exportCaleidoscope()">
+            <div class="col">
+                <main id="caleidoscopio">
+                </main>
+                <div class="botoes-div">
+                    <button type="button" class="btn btn-secondary" onclick="exportCaleidoscope()">
 
-                    Exportar Caleidoscopio
-                </button>
+                        Exportar Caleidoscopio
+                    </button>
+                </div>
             </div>
         </div>
     </div>
