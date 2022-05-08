@@ -246,6 +246,7 @@ function updateOrSave(){
     saveInStorage("ys",ys);
     saveInStorage("xs",xs);
     
+    window.location.replace("http://mvs22.github.io/final.html");
   }else{
     //Se estiver tudo ok, ele remove a cena atual e inicia outra com aproxima palavra
     if(verificaSuperposicao()){
