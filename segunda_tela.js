@@ -96,7 +96,7 @@ function draw() {
 
   textSize(30);
   fill(255, 255, 255);
-  string = 'palavra-atual:'
+  string = 'Palavra Atual:'
   string = string.concat(words[indexWord - 1]);
   //text(string, 320, 600);
   var title = document.getElementById("title");
@@ -140,7 +140,7 @@ function draw() {
   }
 
   
-  text("exemplo", 20, 480);
+  text("Exemplo", 20, 480);
   image(img_example, 0, 500);
   fill('rgba(0,0,0,0.1)');
   stroke('rgba(255,255,255,1)');
