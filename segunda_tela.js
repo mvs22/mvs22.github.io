@@ -96,7 +96,12 @@ function draw() {
 
   textSize(30);
   fill(255, 255, 255);
-  text(words[indexWord - 1], 320, 600);
+  string = 'palavra-atual:'
+  string = string.concat(words[indexWord - 1]);
+  //text(string, 320, 600);
+  var title = document.getElementById("title");
+  title.textContent = string;
+
   // console.log("----------------------- ",words[indexWord-1]);
 
   if (kaledoscope == true) {
@@ -134,7 +139,12 @@ function draw() {
     }
   }
 
+  
+  text("exemplo", 20, 480);
   image(img_example, 0, 500);
+  fill('rgba(0,0,0,0.1)');
+  stroke('rgba(255,255,255,1)');
+  rect(5, 450, 150, 180);
 }
 
 //Função auxiliar
